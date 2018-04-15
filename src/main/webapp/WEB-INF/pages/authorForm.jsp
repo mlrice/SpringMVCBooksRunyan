@@ -13,12 +13,12 @@
 	<mvc:form modelAttribute="author" action="authorResult.mvc">
 		<table>
 			<tr>
-				<td><mvc:label path="firstName">First Name</mvc:label></td>
-				<td><mvc:input path="firstName" /></td>
+				<td><mvc:label path="firstname">First Name</mvc:label></td>
+				<td><mvc:input path="firstname" /></td>
 			</tr>
 			<tr>
-				<td><mvc:label path="lastName">Last Name</mvc:label></td>
-				<td><mvc:input path="lastName" /></td>
+				<td><mvc:label path="lastname">Last Name</mvc:label></td>
+				<td><mvc:input path="lastname" /></td>
 			</tr>
 			<tr>
 				<td><mvc:label path="num_of_publications">Number of Publications</mvc:label></td>
