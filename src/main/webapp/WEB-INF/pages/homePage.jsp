@@ -11,7 +11,9 @@
 </head>
 <body>
 	<h1>Add to our Library</h1>
-	<a href="form.mvc">Add Author Information</a>
+	<a href="form.mvc">Add Book Information</a>
+	<br />
+	<a href="authorForm.mvc">Add Author Information</a>
 	<br />
 	<a href="bookForm.mvc">Select Book Information</a>
 	<br />

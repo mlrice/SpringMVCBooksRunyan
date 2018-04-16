@@ -1,7 +1,17 @@
 package edu.dmacc.spring.springmvcbooksrunyan;
 
-public class Author {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name="authors")
+public class Author {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	private String firstname;
 	private String lastname;
