@@ -17,12 +17,16 @@
 				<td><mvc:input path="title" /></td>
 			</tr>
 			<tr>
+				<td><mvc:label path="author">Author</mvc:label></td>
+				<td><mvc:input path="author" /></td>
+			</tr>
+			<tr>
 				<td><mvc:label path="genre">Genre</mvc:label></td>
 				<td><mvc:input path="genre" /></td>
 			</tr>
 			<tr>
-				<td><mvc:label path="yearPublished">Year Published</mvc:label></td>
-				<td><mvc:input path="yearPublished" /></td>
+				<td><mvc:label path="year_published">Year Published</mvc:label></td>
+				<td><mvc:input path="year_published" /></td>
 			</tr>
 	
 				<td colspan="2"><input type="submit" value="Submit" /></td>

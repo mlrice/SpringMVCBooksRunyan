@@ -15,8 +15,6 @@
 	<br />
 	<a href="authorForm.mvc">Add Author Information</a>
 	<br />
-	<a href="bookForm.mvc">Select Book Information</a>
-	<br />
 	<a href="viewAllAuthors.mvc">View All Authors</a>
 	<br />
 	<a href="viewAllBooks.mvc">View All Books</a>
