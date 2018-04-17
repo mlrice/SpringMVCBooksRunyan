@@ -7,38 +7,43 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>All Authors</title>
+<title>All Books</title>
 </head>
 <body>
-	<mvc:form modelAttribute="author" action="authorUpdate.mvc">
+	<mvc:form modelAttribute="book" action="bookUpdate.mvc">
 		<table>
 			<tr>
 				<th>Selection</th>
-				<th>First Name</th>
-				<th>Last Name</th>
-				<th>Number of Publications</th>
+				<th>Title</th>
+				<th>Author</th>
+				<th>Genre</th>
+				<th>Year Publised</th>
 			</tr>
 			<c:forEach items="${all}" var="item">
 				<tr>
-					<td><input type="radio" name="authorId"
+					<td><input type="radio" name="xid"
 						value="${item.id}"></td>
-					<td>${item.firstname}</td>
+					<td>${item.title}</td>
 
-					<td>${item.lastname}</td>
+					<td>${item.author}</td>
 
-					<td>${item.num_of_publications}</td>
+					<td>${item.genre}</td>
+
+					<td>${item.year_published}</td>
 
 				</tr>
+
+
 			</c:forEach>
 		</table>
 <br />
-		<input type="submit" value="Edit Selected Author"
-			name="doThisToAuthor">
-		<input type="submit" value="Delete Selected Author"
-			name="doThisToAuthor">
+		<input type="submit" value="Edit Selected Book"
+			name="doThisToBook">
+		<input type="submit" value="Delete Selected Book"
+			name="doThisToBook">
 	</mvc:form>
 	<br />
-	<a href="authorForm.mvc">Add a new Author</a>
+	<a href="bookForm.mvc">Add a new book</a>
 	<br />
 	<a href="home.mvc">Back to main menu</a>
 	<br />
