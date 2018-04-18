@@ -7,10 +7,50 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Edit Author</title>
+<style>
+		h1 {color: black; font-family: arial; font-size: 180%; margin: 5px; text-align: center;}
+		p {color: black; font-family: arial; font-size: 140%; margin: 5px;text-align: center;}   
+
+		table {
+		    font-family: arial;
+		    border-collapse: collapse;
+		    width:70%; margin-left:14%; margin-right:15%;
+		}
+		
+		td, th {
+		    border: 2px solid #000000;
+		    text-align: left;
+		    padding: 4px;
+		}
+		
+		tr:nth-child(odd) {
+		    background-color: #FFFFE0;
+		}
+		input[type=submit] {
+			padding: 5px 15px;
+			background: #ccc;
+			border: 2px solid;
+			cursor: pointer;
+		
+			border-color: #000000;
+			font-size: 21px;
+			background-color: #FFFFE0;
+			font-weight: bold;
+			text-shadow: 1px 1px #F36C8C;
+			color: #000000;
+			margin: 25px 25px 25px 130px;
+		</style>
 </head>
 <body>
-<h2>Edit Author</h2>
+<h1>Edit Author</h1>
+	<br />
 	<mvc:form modelAttribute="author" action="authorEditResult.mvc">
+	<a href="viewAllAuthors.mvc">View all Authors</a>
+	<br />
+	<br />
+	<a href="home.mvc">Back to main menu</a>
+	<br />
+	<br />
 		<table>
 			<tr>
 				<td>First Name:</td>
@@ -30,7 +70,6 @@
 		<input type="submit" value="Save Edited Author">
 
 	</mvc:form>
-	<a href="viewAllAuthors.mvc">View all Authors</a>
-	<a href="home.mvc">Back to main menu</a>
+	
 </body>
 </html>
