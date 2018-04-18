@@ -33,7 +33,7 @@ public class AuthorDao {
 		EntityManager em = emfactory.createEntityManager();
 		em.getTransaction().begin();
 		TypedQuery<Author> typedQuery = em.createQuery(
-				"select li from Author li where li.Id = :selectedId",
+				"select li from Author li where li.id = :selectedId",
 				Author.class);
 		typedQuery.setParameter("selectedId", authortoDelete.getId()); 
 		typedQuery.setMaxResults(1);
