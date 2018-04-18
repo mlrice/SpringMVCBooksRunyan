@@ -134,7 +134,16 @@ public class BooksAuthorsController {
 		}
 		 return modelAndView;
 	}
+	
+	@RequestMapping(value = "/authorEditResult")
+	public ModelAndView processEditAuthor(Author author) {
+		ModelAndView modelAndView = new ModelAndView();
+		dao.editAuthor(author);
+		modelAndView.setViewName("authorResult");
+		modelAndView.addObject("a", author);
+		return modelAndView;
 
+	}
 	@RequestMapping(value = "/bookEditResult")
 	public ModelAndView processEditBook(Book book) {
 		ModelAndView modelAndView = new ModelAndView();

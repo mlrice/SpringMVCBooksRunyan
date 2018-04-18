@@ -6,16 +6,19 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
+
 @Entity
 @Table(name="books")
 public class Book {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
-	private String title;
-	private String genre;
+	private String title;  
 	private String author;
+	private String genre;
 	private String year_published;
+
 	
 	public int getId() {
 		return id;
